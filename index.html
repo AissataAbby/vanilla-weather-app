@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
 
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,15 +27,20 @@
      
     <div class="main-container">
          <button type="button-search" class="btn btn-primary">Search</button>
+         <div class="overview">
       <h1> Monaco</h1>
       <ul>
         <li>Friday 05.00 </li>
         <li>clear</li>
+      </ul>
+          </div>
 <br/>
         <div class="row">
           <div class="col-6">
-            <img src="images/icons8-soleil.gif" alt="sunny"/>
-            12C° | 68°F
+            <img src="images/icons8-soleil.gif" alt="sunny" class="float-left"/>
+          <div class="float-left"> 
+           <strong class=""units> 12 </strong> <small class="units"> °| <a href="#"> °F </a> </small>
+          </div>
           </div>
           <div class="col-6">
               <li>Precipitation : 0% </li>
@@ -41,22 +50,22 @@
                  </br>
             
         <hr>
+        <div class="wrap-bottom">
           </div class="citations">
-           API QUOTES : 
+           Api Quotes : 
                       "In order to be irreplaceable one must always be different." <br> Coco Chanel </div>
        
         <hr>
-                                <small>
-        This project was coded by, <i> Aysata </i> and his open-source is
+                                <small class="link-code">
+        This project was coded by <i> Aysata </i> and his open-source is
         <a href="https://github.com/AissataAbby/vanilla-weather-app" target="_blank"> here in Git Hub </a> and hosted on
         <a href="https://Netlify.com/" target="_blank"> Netlify</a>
         </a>
       </small>
           </div>
-    
-        </div>
-
-     
+    </div>
+      
+</div>
   
     </div>
   </body>
