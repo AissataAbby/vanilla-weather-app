@@ -66,9 +66,10 @@ p {
   font-family: "Marck Script", cursive;
 }
 .button-search{
-   padding: 10px auto;
+   padding: 15px 0;
    background-color:deeppink;
    margin-top: 0;
+   font-size: 16px;
    font-family: "Marck Script", cursive;
     
  
@@ -183,11 +184,13 @@ padding: 10px;
   
 }
 .search-city {
-    padding : 1px 286,75px;
-    display: block;
+    padding : 15px 20px;
+    display: inline-block;
     tab-size: 20px;
     box-sizing: border-box;
     text-align: center;
     border-radius: 15px;
     margin: 0px auto;
+    height: 50px;
+    line-height: 20px;
 }
