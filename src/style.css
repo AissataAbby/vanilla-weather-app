@@ -201,5 +201,10 @@ weather {
   color: #7a03a2;
   font-size: 75px;
   padding: 10px;
+  line-height: 1;
   padding-top: 60px;
+}
+.temperature .units {
+  position: relative;
+  top: -40px;
 }
