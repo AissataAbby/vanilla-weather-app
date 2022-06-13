@@ -20,10 +20,10 @@ h1 {
   font-size: 30px;
   font-family: Parisienne, Verdana, Geneva, Tahoma, sans-serif;
   display: block;
-  margin: 0 auto;
+  margin-left: 2px;
 }
 
-h1 #city {
+h1 {
   padding-left: 40px;
 }
 
