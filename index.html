@@ -27,15 +27,20 @@
 
      
     <div class="main-container">
-  
-      <form id="search-city" class="form-horizontal">
-<div class="row"> 
-        <div class="col-9"> 
 
-          <input type="search" placeholder="Type a city..." class="form-control"/>
-
-      <input type="submit" value="Search"/>
       
+
+  
+      <form id="search-city" class="mb-3">
+<div class="row"> 
+        <div class="col-8"> 
+
+          <input type="search" placeholder="Type a city..." class="form-control" id="city-input"/>
+        </div>
+        <div class="col-3">
+
+      <input type="submit" value="Search" class="btn btn-primary w-100"/>
+
         </div>
           </div>
           </form>
@@ -44,6 +49,7 @@
       <ul>
         <li > last updated at <span id="dateOfTheDay" > </span></li>
         <li id="description"> </li>
+        
    
       </ul>
     
@@ -65,45 +71,8 @@
             
         <hr>
         <div class="wrap-bottom">
-          </div class="citations">
-           Api Quotes : 
-                      "In order to be irreplaceable one must always be different." <br> Coco Chanel </div>
-                       <hr class="my-4" />
-        <div id="thought"></div>
-        <div class="row">
-          <div class="col-lg-10">
-            <input
-              type="number"
-              min="0"
-              class="form-control"
-              id="inputsearch"
-              placeholder="numbers (1/1642)"
-              onkeypress="return event.charCode >= 
-                       48 && event.charCode <= 57"/>
-          </div>
+     
 
-          <button
-            type="button"
-            class="btn btn-outline-success col-lg-2"
-            id="searchbtn">
-            Search
-          </button>
-        </div>
-        <div class="container mt-3">
-          <button
-            class="btn btn-outline-danger btn-lg"
-            role="button"
-            id="previousthought">
-            Previous
-          </button>
-          <span>----</span>
-          <input id="countnum" type="hidden" />
-          <button
-            class="btn btn-outline-primary btn-lg"
-            role="button"
-            id="nextthought">
-            Next==>
-          </button>
        
         <hr>
                                 <small class="link-code">
@@ -118,18 +87,3 @@
 </div>
   
     </div>
-  </body>
-   <script src=
-"https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity=
-"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous">
-    </script>
-    <script src=
-"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-            integrity=
-"sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-            crossorigin="anonymous">
-    </script>
-  <script src="src/app.js"></script>
-</html>
