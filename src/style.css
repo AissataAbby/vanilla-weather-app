@@ -200,11 +200,11 @@ weather {
 #temperature {
   color: #7a03a2;
   font-size: 75px;
-  padding: 10px;
+  padding: 5px;
   line-height: 1;
-  padding-top: 60px;
+  padding-top: 5px;
 }
 .temperature .units {
   position: relative;
-  top: -40px;
+  top: -20px;
 }
