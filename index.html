@@ -28,8 +28,16 @@
      
     <div class="main-container">
   
-      <input type="search-city" placeholder="Enter a city.." class="form-control search-input">
-         <button type="button-search" class="btn btn-primary">Search</button>
+      <form id="search-city" class="form-horizontal">
+<div class="row"> 
+        <div class="col-9"> 
+      <input type="search-city" placeholder="Enter a city.." class="form-control"/>
+      <input type="submit" value="Search"/>
+      
+          <input type="search" placeholder="Type a city..." class="form-control"/>
+        </div>
+          </div>
+          </form>
          <div class="overview">
       <h1 id="city"> </h1>
       <ul>
@@ -37,11 +45,12 @@
         <li id="description"> </li>
    
       </ul>
+    
           </div>
 <br/>
         <div class="row">
           <div class="col-6">
-            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="sunny" id="icon"class="float-left"/>
+            <img src="" alt="sunny" id="icon"class="float-left"/>
           <div class="float-left"> 
            <strong id="temperature">  </strong> <small class="units"> °C | <a href="#"> °F </a> </small>
           </div>
