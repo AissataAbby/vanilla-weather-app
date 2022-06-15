@@ -32,7 +32,6 @@ function displayTemperature(response) {
   let iconElement = document.querySelector("#icon");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
-  dateOfTheDayElement.innerHTML = response.data.timezone;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
@@ -44,13 +43,9 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-axios.get(apiUrl).then(displayTemperature);
-
 function search(city) {
   let apiKey = "90e600906859449d4dbb9a39b1b35129";
-  let city = "Monaco";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
   axios.get(apiUrl).then(displayTemperature);
 }
 
@@ -59,6 +54,8 @@ function handlesubmit(event) {
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
 }
+
+search("Monaco");
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handlesubmit);

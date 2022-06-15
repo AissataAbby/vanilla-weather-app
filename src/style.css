@@ -27,7 +27,7 @@ h1 {
 }
 
 h1 {
-  padding-left: 40px;
+  padding-left: 50px;
 }
 
 img {
@@ -79,10 +79,17 @@ p {
 }
 .button-search {
   padding: 15px 0;
-  background-color: deeppink;
   margin-top: 0;
   font-size: 16px;
   font-family: "Marck Script", cursive;
+  display: block;
+
+    box-sizing: border-box;
+
+    border-radius: 15px;
+    box-shadow: 0 0 0 0, 3 rgba(255, 255);
+    margin: 0 auto;
+}
 }
 .col {
   text-align: center;
@@ -216,8 +223,9 @@ weather {
   size: 16px;
 }
 .weather.temperature img {
-  margin-right: 10px;
+  margin-right: 5px;
   float: left;
   height: 64px;
   width: 64px;
+  line-height: 1;
 }

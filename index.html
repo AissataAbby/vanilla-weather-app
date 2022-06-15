@@ -28,13 +28,36 @@
 
      
     <div class="main-container">
-      <input type="search-city" placeholder="Enter a city.." class="form-control search-input">
-         <button type="button-search" class="btn btn-primary">Search</button>
-         <div class="overview">
-      <h1 id="city"> Monaco </h1>
+
+ 
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
+         
+
+      <h1 id="city"> </h1>
       <ul>
         <li > last updated at <span id="dateOfTheDay" > </span></li>
-        <li id="description"> Sunny </li>
+        <li id="description">  </li>
    
       </ul>
           </div>
@@ -43,7 +66,7 @@
           <div class="col-6">
             <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="sunny" class="float-left"/>
           <div class="float-left"> 
-           <strong id="temperature"> 12 </strong> <small class="units"> °C | <a href="#"> °F </a> </small>
+           <strong id="temperature"> </strong> <small class="units">°C | <a href="#">°F</a> </small>
           </div>
           </div>
           <div class="col-6">
@@ -61,7 +84,30 @@
                        
         <hr>
 
-        <div class="WeatherForecast row"><div class="col"><div class="WeatherForecastPreview"><div class="forecast-time">Wed</div><canvas width="38" height="38"></canvas><div class="forecast-temperature"><span class="forecast-temperature-max">27°</span><span class="forecast-temperature-min">20°</span></div></div></div><div class="col"><div class="WeatherForecastPreview"><div class="forecast-time">Thu</div><canvas width="38" height="38"></canvas><div class="forecast-temperature"><span class="forecast-temperature-max">24°</span><span class="forecast-temperature-min">19°</span></div></div></div><div class="col"><div class="WeatherForecastPreview"><div class="forecast-time">Fri</div><canvas width="38" height="38"></canvas><div class="forecast-temperature"><span class="forecast-temperature-max">33°</span><span class="forecast-temperature-min">20°</span></div></div></div><div class="col"><div class="WeatherForecastPreview"><div class="forecast-time">Sat</div><canvas width="38" height="38"></canvas><div class="forecast-temperature"><span class="forecast-temperature-max">22°</span><span class="forecast-temperature-min">14°</span></div></div></div><div class="col"><div class="WeatherForecastPreview"><div class="forecast-time">Sun</div><canvas width="38" height="38"></canvas><div class="forecast-temperature"><span class="forecast-temperature-max">23°</span><span class="forecast-temperature-min">14°</span></div></div></div></div>
+        <div class="WeatherForecast row"> 
+          <div class="col"><div class="WeatherForecastPreview">
+            <div class="forecast-time">Wed</div><canvas width="38" height="38"></canvas>
+            <div class="forecast-temperature"><span class="forecast-temperature-max">27°</span><span class="forecast-temperature-min">20°</span></div>
+          </div>
+        </div>
+        <div class="col"><div class="WeatherForecastPreview">
+          <div class="forecast-time">Thu</div><canvas width="38" height="38"></canvas><div class="forecast-temperature"><span class="forecast-temperature-max">24°</span><span class="forecast-temperature-min">19°</span></div>
+        </div>
+      </div>
+      <div class="col"><div class="WeatherForecastPreview">
+        <div class="forecast-time">Fri</div><canvas width="38" height="38"></canvas><div class="forecast-temperature"><span class="forecast-temperature-max">33°</span><span class="forecast-temperature-min">20°</span></div>
+      </div>
+    </div>
+    <div class="col"><div class="WeatherForecastPreview">
+      <div class="forecast-time">Sat</div><canvas width="38" height="38"></canvas><div class="forecast-temperature"><span class="forecast-temperature-max">22°</span><span class="forecast-temperature-min">14°</span></div>
+    </div>
+  </div>
+  <div class="col"><div class="WeatherForecastPreview"><div class="forecast-time">Sun</div><canvas width="38" height="38"></canvas><div class="forecast-temperature"><span class="forecast-temperature-max">23°</span><span class="forecast-temperature-min">14°</span></div>
+</div>
+</div>
+</div>
+
+
                                 <small class="link-code">
         This project was coded by <i> Aysata </i> and his open-source is
         <a href="https://github.com/AissataAbby/vanilla-weather-app" target="_blank"> here in Git Hub </a> and hosted on
