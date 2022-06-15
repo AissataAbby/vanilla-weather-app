@@ -28,39 +28,22 @@
 
      
     <div class="main-container">
-
-      
-
-  
-      <form id="search-city" class="mb-3">
-<div class="row"> 
-        <div class="col-8"> 
-
-          <input type="search" placeholder="Type a city..." class="form-control" id="city-input"/>
-        </div>
-        <div class="col-3">
-
-      <input type="submit" value="Search" class="btn btn-primary w-100"/>
-
-        </div>
-          </div>
-          </form>
+      <input type="search-city" placeholder="Enter a city.." class="form-control search-input">
+         <button type="button-search" class="btn btn-primary">Search</button>
          <div class="overview">
-      <h1 id="city"> </h1>
+      <h1 id="city"> Monaco </h1>
       <ul>
         <li > last updated at <span id="dateOfTheDay" > </span></li>
-        <li id="description"> </li>
-        
+        <li id="description"> Sunny </li>
    
       </ul>
-    
           </div>
 <br/>
         <div class="row">
           <div class="col-6">
-            <img src="" alt="sunny" id="icon"class="float-left"/>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="sunny" class="float-left"/>
           <div class="float-left"> 
-           <strong id="temperature">  </strong> <small class="units"> °C | <a href="#"> °F </a> </small>
+           <strong id="temperature"> 12 </strong> <small class="units"> °C | <a href="#"> °F </a> </small>
           </div>
           </div>
           <div class="col-6">
@@ -72,10 +55,13 @@
             
         <hr>
         <div class="wrap-bottom">
-     
-
-       
+          </div class="citations">
+           Api Quotes : 
+                      "In order to be irreplaceable one must always be different." <br> Coco Chanel </div>
+                       
         <hr>
+
+        <div class="WeatherForecast row"><div class="col"><div class="WeatherForecastPreview"><div class="forecast-time">Wed</div><canvas width="38" height="38"></canvas><div class="forecast-temperature"><span class="forecast-temperature-max">27°</span><span class="forecast-temperature-min">20°</span></div></div></div><div class="col"><div class="WeatherForecastPreview"><div class="forecast-time">Thu</div><canvas width="38" height="38"></canvas><div class="forecast-temperature"><span class="forecast-temperature-max">24°</span><span class="forecast-temperature-min">19°</span></div></div></div><div class="col"><div class="WeatherForecastPreview"><div class="forecast-time">Fri</div><canvas width="38" height="38"></canvas><div class="forecast-temperature"><span class="forecast-temperature-max">33°</span><span class="forecast-temperature-min">20°</span></div></div></div><div class="col"><div class="WeatherForecastPreview"><div class="forecast-time">Sat</div><canvas width="38" height="38"></canvas><div class="forecast-temperature"><span class="forecast-temperature-max">22°</span><span class="forecast-temperature-min">14°</span></div></div></div><div class="col"><div class="WeatherForecastPreview"><div class="forecast-time">Sun</div><canvas width="38" height="38"></canvas><div class="forecast-temperature"><span class="forecast-temperature-max">23°</span><span class="forecast-temperature-min">14°</span></div></div></div></div>
                                 <small class="link-code">
         This project was coded by <i> Aysata </i> and his open-source is
         <a href="https://github.com/AissataAbby/vanilla-weather-app" target="_blank"> here in Git Hub </a> and hosted on
@@ -88,3 +74,18 @@
 </div>
   
     </div>
+  </body>
+   <script src=
+"https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity=
+"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous">
+    </script>
+    <script src=
+"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity=
+"sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous">
+    </script>
+  <script src="src/app.js"></script>
+</html>

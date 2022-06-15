@@ -21,13 +21,19 @@ h1 {
   font-family: Parisienne, Verdana, Geneva, Tahoma, sans-serif;
   display: block;
   margin-left: 2px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+h1 {
   padding-left: 40px;
 }
 
 img {
   display: block;
   margin: 20px;
-  size: 50px;
+  size: 70px;
   width: 120px;
   float: left;
   border-radius: 15px;
@@ -123,6 +129,9 @@ p {
   scroll-behavior: smooth;
   line-height: 1.5;
 }
+.icon-prev {
+  text-align: left;
+}
 
 .search {
   display: block;
@@ -150,7 +159,7 @@ p {
   display: block;
   position: relative;
   font-size: 3.5rem;
-  line-height: 0, 5;
+  line-height: 1;
   font-weight: 500;
 }
 
@@ -166,7 +175,11 @@ weather {
 .col-6 {
   width: 400px;
 }
-
+.citations {
+  text-align: center;
+  font-family: "Marck Script", cursive;
+  margin: 0 auto;
+}
 .link-code {
   text-align: center;
   margin: 0 auto;
@@ -198,6 +211,13 @@ weather {
   position: relative;
   top: -20px;
 }
+
 .form-control search-input {
   size: 16px;
+}
+.weather.temperature img {
+  margin-right: 10px;
+  float: left;
+  height: 64px;
+  width: 64px;
 }
