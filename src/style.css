@@ -30,22 +30,12 @@ h1 {
   padding-left: 50px;
 }
 
-img {
-  display: block;
-  margin: 20px;
-  size: 70px;
-  width: 120px;
-  float: left;
-  border-radius: 15px;
-  margin-left: 20px;
-  padding: 0;
-}
-
 ul {
   margin: 0;
   padding: 0;
   font-family: "Marck Script", cursive;
 }
+
 li {
   list-style: none;
   font-family: "Marck Script", cursive;
@@ -195,17 +185,19 @@ weather {
   margin: 0 auto;
   padding: 10px;
 }
+
 .units {
-  position: relative;
-  font-size: 16px;
+    position: relative;
+    font-size: 16px;
+    top: -28px;
 }
 
 #temperature {
-  color: #7a03a2;
-  font-size: 75px;
-  padding: 5px;
-  line-height: 1;
-  padding-top: 5px;
+    color: #7a03a2;
+    font-size: 75px;
+    padding: 5px;
+    line-height: 100px;
+    padding-top: 5px;
 }
 .temperature .units {
   position: relative;
