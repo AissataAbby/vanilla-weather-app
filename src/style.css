@@ -74,13 +74,13 @@ p {
   font-family: "Marck Script", cursive;
   display: block;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    border-radius: 15px;
-    box-shadow: 0 0 0 0, 3 rgba(255, 255);
-    margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 0 0 0, 3 rgba(255, 255);
+  margin: 0 auto;
 }
-}
+
 .col {
   text-align: center;
 }
@@ -178,27 +178,27 @@ weather {
 .citations {
   text-align: center;
   font-family: "Marck Script", cursive;
-  margin: 0 auto;
+  margin: 0 auto 0;
 }
 .link-code {
-  text-align: center;
+  text-align: right;
   margin: 0 auto;
   padding: 10px;
 }
 
 .units {
-    position: relative;
-    font-size: 16px;
-    top: -28px;
-    text-decoration: none;
+  position: relative;
+  font-size: 16px;
+  top: -28px;
+  text-decoration: none;
 }
 
 #temperature {
-    color: #7a03a2;
-    font-size: 75px;
-    padding: 5px;
-    line-height: 100px;
-    padding-top: 5px;
+  color: #7a03a2;
+  font-size: 75px;
+  padding: 5px;
+  line-height: 100px;
+  padding-top: 5px;
 }
 .temperature .units {
   position: relative;
@@ -207,7 +207,6 @@ weather {
 
 .form-control search-input {
   size: 16px;
-  
 }
 .weather.temperature img {
   margin-right: 5px;
@@ -216,10 +215,27 @@ weather {
   width: 64px;
   line-height: 1;
 }
-.units .active{
+.units .active {
   color: #7a03a2;
-  cursor: default
+  cursor: default;
 }
-.units .active:hover{
+.units .active:hover {
   text-decoration: none;
+}
+.sun {
+  margin-right: 25px;
+  float: center;
+  height: 34px;
+  width: 34px;
+  line-height: 1;
+}
+.WeatherForecast {
+  text-align: center;
+  margin-top: 20px;
+}
+.forecast-temperature-min {
+  opacity: 0, 5;
+}
+.forecast-temperature-max {
+  font-weight: bold;
 }
