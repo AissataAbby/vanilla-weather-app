@@ -145,9 +145,12 @@ p {
   tab-size: 20px;
   box-sizing: border-box;
   text-align: center;
-  border-radius: 15px;
   box-shadow: 0 0 0 0, 3 rgba(255, 255);
   margin: 0 auto;
+  padding: 15px 20px;
+  border-radius: 20px;
+  height: 50px;
+  line-height: 20px;
 }
 .submit {
   display: block;
@@ -196,17 +199,7 @@ weather {
   position: relative;
   font-size: 16px;
 }
-.search-city {
-  padding: 15px 20px;
-  display: inline-block;
-  tab-size: 20px;
-  box-sizing: border-box;
-  text-align: center;
-  border-radius: 15px;
-  margin: 0px auto;
-  height: 50px;
-  line-height: 20px;
-}
+
 #temperature {
   color: #7a03a2;
   font-size: 75px;
