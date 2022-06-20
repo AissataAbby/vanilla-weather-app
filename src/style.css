@@ -141,9 +141,8 @@ p {
   border-radius: 15px;
   height: 50px;
   line-height: 20px;
-    
 }
-}
+
 .submit {
   display: block;
   margin: 20px auto;
@@ -220,7 +219,7 @@ weather {
 .units .active:hover {
   text-decoration: none;
 }
-.sun {
+.icon-day {
   margin-right: 25px;
   float: center;
   height: 34px;
