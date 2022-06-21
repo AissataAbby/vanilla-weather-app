@@ -1,5 +1,3 @@
-const { default: axios } = require("axios");
-
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -33,9 +31,9 @@ function formatDay(timestamp) {
   return days[day];
 }
 
-function displayForecast() {
+function displayForecast(response) {
   let forecast = response.data.daily;
-  let forecastElement = document.querySelector(#forecast);
+  let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
@@ -55,10 +53,10 @@ function displayForecast() {
         <div class="weather-forecast-temperatures">
           <span class="weather-forecast-temperature-max"> ${Math.round(
             forecastDay.temp.max
-          )} </span>
+          )}°</span>
           <span class="weather-forecast-temperature-min"> ${Math.round(
-            forecastDay.temp.max
-          )} </span>
+            forecastDay.temp.min
+          )}°</span>
         </div>
       </div>
   `;
@@ -67,7 +65,6 @@ function displayForecast() {
 
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
-  console.log(forecastHTML);
 }
 
 function getForecast(coordinates) {
@@ -97,9 +94,8 @@ function displayTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  getForecast(response.data.coord);
 }
-
-getForecast(response.data.coord);
 
 function search(city) {
   let apiKey = "90e600906859449d4dbb9a39b1b35129";
