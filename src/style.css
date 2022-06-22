@@ -22,6 +22,7 @@ h1 {
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
+  font-weight: bolder;
 }
 
 h1 {
@@ -30,7 +31,8 @@ h1 {
 
 ul {
   margin: 0;
-  padding: 0;
+  padding-left: 25px;
+
   font-family: "Marck Script", cursive;
 }
 
@@ -41,7 +43,7 @@ li {
   height: 18.8889;
   text-align: left;
   margin: 0;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 li :first-letter {
@@ -71,9 +73,7 @@ p {
   font-size: 10px;
   font-family: "Marck Script", cursive;
   display: block;
-
   box-sizing: border-box;
-
   border-radius: 15px;
   box-shadow: 0 0 0 0, 3 rgba(255, 255);
   margin: 0 auto;
@@ -227,6 +227,7 @@ weather {
 .WeatherForecast {
   text-align: center;
   margin-top: 20px;
+  font-size: 22px;
 }
 .forecast-temperature-min {
   opacity: 0, 5;
