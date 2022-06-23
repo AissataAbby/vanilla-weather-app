@@ -9,6 +9,7 @@ function formatDate(timestamp) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
+
   let days = [
     "Sunday",
     "Monday",
@@ -43,6 +44,7 @@ function displayForecast(response) {
         `
       <div class="col-2">
         <div class="weather-forecast-date">${forecastDay.dt}</div>
+        
         <img
           src="http://openweathermap.org/img/wn/${
             forecastDay.weather[0].icon
