@@ -80,6 +80,15 @@ p {
   background-color: #7a03a2;
 }
 
+.btn {
+  background: linear-gradient(
+    103deg,
+    rgb(235, 225, 188) 7.2%,
+    rgb(232, 188, 234) 57.5%,
+    rgb(203, 209, 244) 90.7%
+  );
+}
+
 .col {
   text-align: center;
 }
@@ -129,7 +138,7 @@ p {
   text-align: left;
 }
 
-.search {
+#search-form {
   display: block;
   tab-size: 20px;
   box-sizing: border-box;
@@ -140,7 +149,7 @@ p {
   border-radius: 15px;
   height: 50px;
   line-height: 20px;
-  background-color: #7a03a2;
+  size: 18px;
 }
 
 .submit {
@@ -203,7 +212,7 @@ weather {
 }
 
 .form-control search-input {
-  size: 16px;
+  size: 18px;
 }
 .weather.temperature img {
   margin-right: 5px;
